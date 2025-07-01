@@ -10,13 +10,13 @@ jobs:
         include:
           - name: Windows x32
             os: windows-2019
-            buildArgs: windows
-            artifactName: Windows
+            buildArgs: "windows -i686"
+            artifactName: Windows-x32
             artifactPath: export\release\windows\bin\*
-          - name: Windows
+          - name: Windows x64
             os: windows-2022
-            buildArgs: windows
-            artifactName: Windows
+            buildArgs: "windows -x86_64"
+            artifactName: Windows-x64
             artifactPath: export\release\windows\bin\*
           - name: Linux
             os: ubuntu-22.04
