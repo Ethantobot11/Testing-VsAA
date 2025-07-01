@@ -10,12 +10,12 @@ jobs:
         include:
           - name: Windows x32
             os: windows-2022
-            buildArgs: "windows -i686"
+            buildArgs: "windows -x32"
             artifactName: Windows-x32
             artifactPath: export\release\windows\bin\*
           - name: Windows x64
             os: windows-2022
-            buildArgs: "windows -x86_64"
+            buildArgs: windows
             artifactName: Windows-x64
             artifactPath: export\release\windows\bin\*
           - name: Linux
