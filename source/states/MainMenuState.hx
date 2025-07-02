@@ -100,10 +100,11 @@ class MainMenuState extends MusicBeatState
 			menuItem.x = 100;
 		}
 
-		char6 = new FlxSprite(600, 600);
+		char6 = new FlxSprite(500, 500);
 		char6.antialiasing = ClientPrefs.data.antialiasing;
 		char6.frames = Paths.getSparrowAtlas('mainmenu/menu_characters/options_thinking');
 		char6.animation.addByPrefix('menu', "Menu", 24);
+		char6.animation.play('menu');
 		char6.setGraphicSize(Std.int(char6.width * 0.8));
 		add(char6);
 		char6.visible = false;
@@ -155,9 +156,6 @@ class MainMenuState extends MusicBeatState
 
 		if (optionShit[curSelected] == 'options')
 		{
-			changeItem(-1);
-			changeItem(1);
-			
 			char6.updateHitbox();
 			char6.visible = true;
 		}
