@@ -37,6 +37,8 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 
+	var char6:FlxSprite;
+
 	override function create()
 	{
 		#if MODS_ALLOWED
@@ -98,6 +100,14 @@ class MainMenuState extends MusicBeatState
 			menuItem.x = 100;
 		}
 
+		char6 = new FlxSprite(600, 600);
+		char6.antialiasing = ClientPrefs.data.antialiasing;
+		char6.frames = Paths.getSparrowAtlas('mainmenu/menu_characters/options_thinking');
+		char6.animation.addByPrefix('menu', "Menu", 24);
+		char6.setGraphicSize(Std.int(char6.width * 0.8));
+		add(char6);
+		char6.visible = false;
+
 		var modVer:FlxText = new FlxText(12, FlxG.height - 64, 0, "Vs Ali Alafandy v" + modVersion, 12);
 		modVer.scrollFactor.set();
 		modVer.setFormat("VCR OSD Mono", 16, FlxColor.BLUE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -141,6 +151,20 @@ class MainMenuState extends MusicBeatState
 			FlxG.sound.music.volume += 0.5 * elapsed;
 			if (FreeplayState.vocals != null)
 				FreeplayState.vocals.volume += 0.5 * elapsed;
+		}
+
+		if (optionShit[curSelected] == 'options')
+		{
+			changeItem(-1);
+			changeItem(1);
+
+			char6.dance();
+			char6.updateHitbox();
+			char6.visible = true;
+		}
+		else
+		{
+			char6.visible = false;
 		}
 
 		if (!selectedSomethin)
