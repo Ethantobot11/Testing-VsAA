@@ -10,9 +10,9 @@ jobs:
         include:
           - name: Windows x32
             os: windows-2022
-            buildArgs: "windows -x32"
+            buildArgs: "windows -32 -D 32bits"
             artifactName: Windows-x32
-            artifactPath: export\release\windows\bin\*
+            artifactPath: export\32bit\windows\bin\*
           - name: Windows x64
             os: windows-2022
             buildArgs: windows
