@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="options_thinking.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Menu0000" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0001" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0002" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0003" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0004" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0005" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0006" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0007" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0008" x="512" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0009" x="512" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0010" x="512" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0011" x="512" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0012" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0013" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0014" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0015" x="512" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0016" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0017" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0018" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0019" x="0" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0020" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0021" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0022" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0023" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0024" x="1024" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0025" x="1024" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0026" x="1024" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0027" x="1024" y="418" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0028" x="0" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0029" x="0" y="0" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0030" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+	<SubTexture name="Menu0031" x="0" y="836" width="512" height="418" frameX="-65" frameY="-23" frameWidth="640" frameHeight="480"/>
+</TextureAtlas>
