@@ -157,8 +157,7 @@ class MainMenuState extends MusicBeatState
 		{
 			changeItem(-1);
 			changeItem(1);
-
-			char6.dance();
+			
 			char6.updateHitbox();
 			char6.visible = true;
 		}
