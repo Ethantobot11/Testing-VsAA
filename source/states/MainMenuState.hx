@@ -97,10 +97,10 @@ class MainMenuState extends MusicBeatState
 			menuItem.scrollFactor.set(0, scr);
 			menuItem.updateHitbox();
 			// menuItem.screenCenter(X);
-			menuItem.x = 100;
+			menuItem.x = 95;
 		}
 
-		char6 = new FlxSprite(435, 500);
+		char6 = new FlxSprite(425, 500);
 		char6.antialiasing = ClientPrefs.data.antialiasing;
 		char6.frames = Paths.getSparrowAtlas('mainmenu/menu_characters/options_thinking');
 		char6.animation.addByPrefix('menu', "Menu", 24);
