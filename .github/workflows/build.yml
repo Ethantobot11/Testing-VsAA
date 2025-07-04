@@ -54,7 +54,7 @@ jobs:
           haxelib run lime config ANDROID_SETUP true
 
       - name: Compile
-        run: haxelib run lime build ${{ inputs.buildArgs }}
+        run: haxelib run lime build ${{ inputs.buildArgs }} --app-version="4.0.0-${{ github.run_id}}"
 
       - name: Make IPA
         if: inputs.name == 'iOS'
