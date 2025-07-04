@@ -105,11 +105,11 @@ class MainMenuState extends MusicBeatState
 		char6.frames = Paths.getSparrowAtlas('mainmenu/menu_characters/options_thinking');
 		char6.animation.addByPrefix('menu', "Menu", 24);
 		char6.animation.play('menu');
-		char6.setGraphicSize(Std.int(char6.width * 0.8));
-		char6.scaleObject.set(1.1);
-		add(char6);
+		char6.updateHitbox();
 		char6.visible = false;
-
+		char6.setGraphicSize(Std.int(char6.width * 1));
+		add(char6);
+		
 		var modVer:FlxText = new FlxText(12, FlxG.height - 64, 0, "Vs Ali Alafandy v" + modVersion, 12);
 		modVer.scrollFactor.set();
 		modVer.setFormat("VCR OSD Mono", 16, FlxColor.BLUE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -157,7 +157,6 @@ class MainMenuState extends MusicBeatState
 
 		if (optionShit[curSelected] == 'options')
 		{
-			char6.updateHitbox();
 			char6.visible = true;
 		}
 		else
