@@ -100,14 +100,14 @@ class MainMenuState extends MusicBeatState
 			menuItem.x = 100;
 		}
 
-		char6 = new FlxSprite(450, 550);
+		char6 = new FlxSprite(400, 450);
 		char6.antialiasing = ClientPrefs.data.antialiasing;
 		char6.frames = Paths.getSparrowAtlas('mainmenu/menu_characters/options_thinking');
 		char6.animation.addByPrefix('menu', "Menu", 24);
 		char6.animation.play('menu');
 		char6.updateHitbox();
 		char6.visible = false;
-		char6.setGraphicSize(Std.int(char6.width * 1));
+		// char6.setGraphicSize(Std.int(char6.width * 1));
 		add(char6);
 		
 		var modVer:FlxText = new FlxText(12, FlxG.height - 64, 0, "Vs Ali Alafandy v" + modVersion, 12);
