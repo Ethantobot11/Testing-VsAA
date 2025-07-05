@@ -9,8 +9,8 @@ jobs:
       matrix:
         include:
           - name: Windows x32
-            os: windows-latest
-            buildArgs: "windows -32bits"
+            os: windows-2022
+            buildArgs: "windows -32"
             artifactName: Windows-x32
             artifactPath: export\release\windows\bin\*
           - name: Windows x64
