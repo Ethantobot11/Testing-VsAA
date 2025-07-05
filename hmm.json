@@ -9,7 +9,7 @@
     },
     {
       "name": "openfl",
-      "type": "haxelib",
+      "type": "git",
       "dir": null,
       "ref": "main",
       "url": "https://github.com/AliAlafandy/openfl"
