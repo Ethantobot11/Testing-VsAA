@@ -12,7 +12,7 @@ jobs:
             os: windows-2022
             buildArgs: "windows -32"
             artifactName: Windows-x32
-            artifactPath: export\release\windows\bin\*
+            artifactPath: export\32bit\windows\bin\*
           - name: Windows x64
             os: windows-2022
             buildArgs: windows
