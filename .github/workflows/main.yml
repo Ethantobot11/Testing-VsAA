@@ -8,11 +8,6 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: Windows x32
-            os: windows-2022
-            buildArgs: "windows -32 -D -HXCPP_M32"
-            artifactName: Windows-x32
-            artifactPath: export\32bit\windows\bin\*
           - name: Windows x64
             os: windows-2022
             buildArgs: windows
