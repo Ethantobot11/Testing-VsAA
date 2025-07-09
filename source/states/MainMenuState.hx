@@ -63,7 +63,7 @@ class MainMenuState extends MusicBeatState
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
-		bg.color = 0xFF000080;
+		bg.color = 0xFF0000FF;
 		add(bg);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
@@ -76,7 +76,7 @@ class MainMenuState extends MusicBeatState
 		magenta.updateHitbox();
 		magenta.screenCenter();
 		magenta.visible = false;
-		magenta.color = 0xFF008080;
+		magenta.color = 0xFF00FFFF;
 		add(magenta);
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
