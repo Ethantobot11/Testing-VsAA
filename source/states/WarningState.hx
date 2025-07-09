@@ -47,8 +47,8 @@ class WarningState extends MusicBeatState
 			"System Detected RAM: " + ramGB + " GB.\n" +
 			"Also,\n" +
 			"This Mod contains some flashing lights!\n" +
-			"Press $buttonAccept to continue and disable them now or go to Options Menu.\n" +
-			"Press $buttonBack to ignore this massage.\n" +
+			"Press A/ENTER to continue and disable them now or go to Options Menu.\n" +
+			"Press B/ESCAPE to ignore this massage.\n" +
 			"You've been warned!",
 			32);
 			warnText.setFormat("VCR OSD Mono", 32, FlxColor.CYAN, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -60,8 +60,8 @@ class WarningState extends MusicBeatState
 			warnText = new FlxText(0, 0, FlxG.width, 
 			"Hey, yoo!!\n
 			This Mod contains some flashing lights!\n
-			Press $buttonAccept to continue and disable them now or go to Options Menu.\n
-			Press $buttonBack to ignore this massage.\n
+			Press A/ENTER to continue and disable them now or go to Options Menu.\n
+			Press B/ESCAPE to ignore this massage.\n
 			You've been warned!",
 			32);
 			warnText.setFormat("VCR OSD Mono", 32, FlxColor.CYAN, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
