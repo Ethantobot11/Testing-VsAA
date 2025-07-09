@@ -63,7 +63,7 @@ class MainMenuState extends MusicBeatState
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
-		bg.color = 0xFF0000FF;
+		bg.color = 0xFF000080;
 		add(bg);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
