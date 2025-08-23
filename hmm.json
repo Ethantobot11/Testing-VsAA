@@ -5,7 +5,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/AlafandyPorting/lime"
+      "url": "https://github.com/AlafandyPorting/lime-0.7.3"
     },
     {
       "name": "openfl",
@@ -68,7 +68,7 @@
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/AlafandyPorting/linc_luajit"
+      "url": "https://github.com/AlafandyPorting/linc_luajit-0.7.3"
     },
     {
       "name": "flxanimate",
