@@ -5,7 +5,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/AliAlafandy/lime"
+      "url": "https://github.com/AlafandyPorting/lime"
     },
     {
       "name": "openfl",
@@ -37,7 +37,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/AliAlafandy/hxcpp"
+      "url": "https://github.com/AlafandyPorting/hxcpp"
     },
     {
       "name": "hxCodec",
@@ -51,7 +51,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/AliAlafandy/SScript"
+      "url": "https://github.com/AlafandyPorting/SScript"
     },
     {
       "name": "tjson",
@@ -68,7 +68,7 @@
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/AliAlafandy/linc_luajit"
+      "url": "https://github.com/AlafandyPorting/linc_luajit"
     },
     {
       "name": "flxanimate",
