@@ -40,6 +40,12 @@ jobs:
         if: inputs.name == 'Linux'
         run: sudo apt install libvlc-dev libvlccore-dev
 
+      - name: Setup XCode
+        if: inputs.name == 'iOS'
+        uses: maxim-lobanov/setup-xcode@master
+        with:
+          xcode-version: '16.4'
+
       - name: Install Libraries
         run: |
           haxelib install hmm --quiet
