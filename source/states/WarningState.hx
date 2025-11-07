@@ -39,18 +39,16 @@ class WarningState extends MusicBeatState
 		FlxTween.tween(grid, {alpha: 1}, 0.5, {ease: FlxEase.quadOut});
 		add(grid);
 		
-		
 		var ramGB:Float = Math.round(getSystemRAM() * 100) / 100;
-		
-		var warnMobile:String = "Hey, yoo!!\n" +
+
 		#if mobile
-		warnMobile +=
-			"This Mod needs at least 2 GB of RAM to run nicely.\n" +
+		var warnMobile:String = "Hey, yoo!!\n" +
+			"This Mod needs at least 4 GB of RAM to run nicely.\n" +
 			"System Detected RAM: " + ramGB + " GB.\n" +
 			"Also,\n" +
 			"This Mod contains some flashing lights!\n" +
 			"Press A to continue and disable them now or go to Options Menu.\n" +
-			"Press B to ignore this message.\n" +
+			"Press B to ignore this massage.\n" +
 			"You've been warned!";
 
 		var guhMobile:String = "Hey, yoo!!\n
@@ -123,70 +121,36 @@ class WarningState extends MusicBeatState
 					ClientPrefs.data.flashing = false;
 					ClientPrefs.saveSettings();
 					FlxG.sound.play(Paths.sound('confirmMenu'));
-					
-					if (ramGB < 3.49)
-					{
-						#if mobile
-						FlxFlicker.flicker(warnMobile, 1, 0.1, false, true, function(flk:FlxFlicker) {
-							new FlxTimer().start(0.5, function (tmr:FlxTimer) {
-								MusicBeatState.switchState(new TitleState());
-							});
+
+					#if mobile
+					FlxFlicker.flicker(warnTextMobile, 1, 0.1, false, true, function(flk:FlxFlicker) {
+						new FlxTimer().start(0.5, function (tmr:FlxTimer) {
+							MusicBeatState.switchState(new TitleState());
 						});
-						#else
-						FlxFlicker.flicker(warn, 1, 0.1, false, true, function(flk:FlxFlicker) {
-							new FlxTimer().start(0.5, function (tmr:FlxTimer) {
-								MusicBeatState.switchState(new TitleState());
-							});
+					});
+					#else
+					FlxFlicker.flicker(warnText, 1, 0.1, false, true, function(flk:FlxFlicker) {
+						new FlxTimer().start(0.5, function (tmr:FlxTimer) {
+							MusicBeatState.switchState(new TitleState());
 						});
-						#end
-					} else {
-						#if mobile
-						FlxFlicker.flicker(guhMobile, 1, 0.1, false, true, function(flk:FlxFlicker) {
-							new FlxTimer().start(0.5, function (tmr:FlxTimer) {
-								MusicBeatState.switchState(new TitleState());
-							});
-						});
-						#else
-						FlxFlicker.flicker(guh, 1, 0.1, false, true, function(flk:FlxFlicker) {
-							new FlxTimer().start(0.5, function (tmr:FlxTimer) {
-								MusicBeatState.switchState(new TitleState());
-							});
-						});
-						#end
-					}
+					});
+					#end
 				} else {
 					FlxG.sound.play(Paths.sound('cancelMenu'));
-					
-					if (ramGB < 3.49)
-					{
-						#if mobile
-						FlxTween.tween(warnMobile, {alpha: 0}, 1, {
-							onComplete: function (twn:FlxTween) {
-								MusicBeatState.switchState(new TitleState());
-							}
-						});
-						#else
-						FlxTween.tween(warn, {alpha: 0}, 1, {
-							onComplete: function (twn:FlxTween) {
-								MusicBeatState.switchState(new TitleState());
-							}
-						});
-						#end
-					} else {
-						#if mobile
-						FlxTween.tween(guhMobile, {alpha: 0}, 1, {
-							onComplete: function (twn:FlxTween) {
-								MusicBeatState.switchState(new TitleState());
-							}
-						});
-						#else
-						FlxTween.tween(guh, {alpha: 0}, 1, {
-							onComplete: function (twn:FlxTween) {
-								MusicBeatState.switchState(new TitleState());
-							}
-						});
-						#end
-					}
+
+					#if mobile
+					FlxTween.tween(warnTextMobile, {alpha: 0}, 1, {
+						onComplete: function (twn:FlxTween) {
+							MusicBeatState.switchState(new TitleState());
+						}
+					});
+					#else
+					FlxTween.tween(warnText, {alpha: 0}, 1, {
+						onComplete: function (twn:FlxTween) {
+							MusicBeatState.switchState(new TitleState());
+						}
+					});
+					#end
 				}
 			}
 		}
@@ -221,6 +185,3 @@ class WarningState extends MusicBeatState
 	return 0;
 	}
 }
-
-
-
