@@ -44,13 +44,13 @@ class WarningState extends MusicBeatState
 		
 		var warnMobile:String = "Hey, yoo!!\n" +
 		#if mobile
-		var warnMobile:String = "Hey, yoo!!\n" +
-			"This Mod needs at least 4 GB of RAM to run nicely.\n" +
+		warnMobile +=
+			"This Mod needs at least 2 GB of RAM to run nicely.\n" +
 			"System Detected RAM: " + ramGB + " GB.\n" +
 			"Also,\n" +
 			"This Mod contains some flashing lights!\n" +
 			"Press A to continue and disable them now or go to Options Menu.\n" +
-			"Press B to ignore this massage.\n" +
+			"Press B to ignore this message.\n" +
 			"You've been warned!";
 
 		var guhMobile:String = "Hey, yoo!!\n
@@ -221,5 +221,6 @@ class WarningState extends MusicBeatState
 	return 0;
 	}
 }
+
 
 
